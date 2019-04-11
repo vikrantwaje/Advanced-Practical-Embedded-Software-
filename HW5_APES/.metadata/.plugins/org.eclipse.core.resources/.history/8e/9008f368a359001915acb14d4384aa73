@@ -1,0 +1,56 @@
+/***********************************************************************************
+ * @file main.h
+ * @brief Contains all header files for all peripheral. This is the only file to be included in main.c
+ * @author Vikrant Waje
+ * @date April 7, 2018
+ *
+ *****************************************************************************/
+
+#ifndef INCLUDES_MAIN_H_
+#define INCLUDES_MAIN_H_
+//***********************************************************************************
+//                              Include files
+//***********************************************************************************
+//#include "driverlib/gpio.h"
+//#include "driverlib/rom.h"
+//#include "driverlib/sysctl.h"
+//#include "driverlib/uart.h"
+//#include "utils/uartstdio.h"
+
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "semphr.h"
+#include "inc/hw_types.h"
+
+#include"myuart.h"
+#include"mystack.h"
+
+
+//***********************************************************************************
+//                                  Macros
+//***********************************************************************************
+//*****************************************************************************
+//
+// The error routine that is called if the driver library encounters an error.
+//
+//*****************************************************************************
+#ifdef DEBUG
+void
+__error__(char *pcFilename, uint32_t ui32Line)
+{
+}
+
+#endif
+//***********************************************************************************
+//                              Global variables
+//***********************************************************************************
+
+
+//***********************************************************************************
+//                              Function Prototype
+//***********************************************************************************
+
+
+
+#endif /* INCLUDES_MAIN_H_ */

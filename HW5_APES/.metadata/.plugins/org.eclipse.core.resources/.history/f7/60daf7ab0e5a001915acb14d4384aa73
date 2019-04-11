@@ -1,0 +1,91 @@
+/************************************************************************************
+ * @file main.c
+ * @brief Contains main function
+ * @author Vikrant Waje
+ * @date April 7, 2019
+ *
+ ************************************************************************************/
+
+//***********************************************************************************
+//***********************************************************************************
+//                                  Include files
+//***********************************************************************************
+#include"main.h"
+
+//***********************************************************************************
+//                                  Global variables
+//***********************************************************************************
+
+xSemaphoreHandle g_pUARTSemaphore; // The mutex that protects concurrent access of UART from multiple tasks.
+
+//***********************************************************************************
+//                              Function implementation
+//***********************************************************************************
+
+int main(void)
+{
+    i2c_status_t read_status;
+    uint8_t *data = NULL;
+    system_init();  //Initialises peripherals required for system operation
+
+    //
+    // Print demo introduction.
+    //
+    //UARTprintf("\n\nWelcome to the EK-TM4C123GXL FreeRTOS Demo!\n");
+
+    //
+    // Create a mutex to guard the UART.
+    //
+    //g_pUARTSemaphore = xSemaphoreCreateMutex();
+
+    //
+    // Create the LED task.
+    //
+    data = malloc(sizeof(uint8_t) * 2);
+    while (1)
+    {
+        MAP_SysCtlDelay(300);
+
+        read_status = i2c_read_two_byte(TEMP_SENSOR_I2C_ADDRESS,
+                                         TEMPERATURE_REG, data);
+        if (read_status != READ_SUCCESS)
+        {
+            UARTprintf("\n\nReading from temperature sensor failed!\n");
+
+        }
+        UARTprintf("\n\nVal = %x\n", (*(data + 1) << 8) | *(data + 0));
+
+    }
+//
+    // Create the LED task.
+    //
+    /* if(xTaskCreate(LedTask, (const portCHAR *)"LED", 128, NULL, tskIDLE_PRIORITY + PRIORITY_LED_TASK, NULL) != pdTRUE)
+     {
+     return(1);  //Error checking
+     }*/
+
+//
+//    //
+//    // Create the switch task.
+//    //
+//    if(SwitchTaskInit() != 0)
+//    {
+//
+//        while(1)
+//        {
+//        }
+//    }
+    //
+    // Start the scheduler.  This should not return.
+    //
+    vTaskStartScheduler();
+
+    //
+    // In case the scheduler returns for some reason, print an error and loop
+    // forever.
+    //
+
+    while (1)
+    {
+    }
+}

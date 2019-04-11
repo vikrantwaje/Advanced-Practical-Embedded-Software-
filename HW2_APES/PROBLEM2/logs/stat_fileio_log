@@ -1,0 +1,16 @@
+# started on Sat Jan 26 23:14:12 2019
+
+
+ Performance counter stats for './myfileIO':
+
+          0.758983      task-clock (msec)         #    0.000 CPUs utilized          
+                 5      context-switches          #    0.007 M/sec                  
+                 0      cpu-migrations            #    0.000 K/sec                  
+                55      page-faults               #    0.072 M/sec                  
+   <not supported>      cycles                                                      
+   <not supported>      instructions                                                
+   <not supported>      branches                                                    
+   <not supported>      branch-misses                                               
+
+       6.213023250 seconds time elapsed
+

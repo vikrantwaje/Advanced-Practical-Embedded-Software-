@@ -1,0 +1,92 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL = cmd.exe
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../source/main.c \
+../source/myclock.c \
+../source/mygpio.c \
+../source/myi2c.c \
+../source/myled.c \
+../source/mystack.c \
+../source/mysynchronization.c \
+../source/mysystem.c \
+../source/mytemperature_sensor.c \
+../source/mythreads.c \
+../source/mytimer.c \
+../source/myuart.c 
+
+C_DEPS += \
+./source/main.d \
+./source/myclock.d \
+./source/mygpio.d \
+./source/myi2c.d \
+./source/myled.d \
+./source/mystack.d \
+./source/mysynchronization.d \
+./source/mysystem.d \
+./source/mytemperature_sensor.d \
+./source/mythreads.d \
+./source/mytimer.d \
+./source/myuart.d 
+
+OBJS += \
+./source/main.obj \
+./source/myclock.obj \
+./source/mygpio.obj \
+./source/myi2c.obj \
+./source/myled.obj \
+./source/mystack.obj \
+./source/mysynchronization.obj \
+./source/mysystem.obj \
+./source/mytemperature_sensor.obj \
+./source/mythreads.obj \
+./source/mytimer.obj \
+./source/myuart.obj 
+
+OBJS__QUOTED += \
+"source\main.obj" \
+"source\myclock.obj" \
+"source\mygpio.obj" \
+"source\myi2c.obj" \
+"source\myled.obj" \
+"source\mystack.obj" \
+"source\mysynchronization.obj" \
+"source\mysystem.obj" \
+"source\mytemperature_sensor.obj" \
+"source\mythreads.obj" \
+"source\mytimer.obj" \
+"source\myuart.obj" 
+
+C_DEPS__QUOTED += \
+"source\main.d" \
+"source\myclock.d" \
+"source\mygpio.d" \
+"source\myi2c.d" \
+"source\myled.d" \
+"source\mystack.d" \
+"source\mysynchronization.d" \
+"source\mysystem.d" \
+"source\mytemperature_sensor.d" \
+"source\mythreads.d" \
+"source\mytimer.d" \
+"source\myuart.d" 
+
+C_SRCS__QUOTED += \
+"../source/main.c" \
+"../source/myclock.c" \
+"../source/mygpio.c" \
+"../source/myi2c.c" \
+"../source/myled.c" \
+"../source/mystack.c" \
+"../source/mysynchronization.c" \
+"../source/mysystem.c" \
+"../source/mytemperature_sensor.c" \
+"../source/mythreads.c" \
+"../source/mytimer.c" \
+"../source/myuart.c" 
+
+

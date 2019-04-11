@@ -1,0 +1,23 @@
+printf("\n\r This is file containing progr"...)                                 = 76
+fopen("myfileIO.txt", "w")                                                      = 0x55ea92969670
+fopen("myfileIO.txt", "r+")                                                     = 0x55ea929698a0
+fopen("myfileIO.txt", "w+")                                                     = 0x55ea92969ad0
+fputc('v', 0x55ea92969ad0)                                                      = 118
+fclose(0x55ea92969ad0)                                                          = 0
+fopen("myfileIO.txt", "a")                                                      = 0x55ea92969ad0
+malloc(20)                                                                      = 0x55ea92969d00
+printf("\n\rEnter the string that is to in"...)                                 = 58
+__isoc99_scanf(0x55ea90d96e63, 0x55ea92969d00, 0, 0)                            = 1
+fputs("Vikrant was here", 0x55ea92969ad0)                                       = 1
+fflush(0x55ea92969ad0)                                                          = 0
+fclose(0x55ea92969ad0)                                                          = 0
+fopen("myfileIO.txt", "r")                                                      = 0x55ea92969ad0
+fgetc(0x55ea92969ad0)                                                           = 'v'
+feof(0x55ea92969ad0)                                                            = 0
+printf("\n\r%c", 'v')                                                           = 3
+strlen("Vikrant was here")                                                      = 16
+fgets("Vikrant was here", 17, 0x55ea92969ad0)                                   = 0x55ea92969d00
+printf("%s", "Vikrant was here")                                                = 16
+fclose(0x55ea92969ad0)                                                          = 0
+free(0x55ea92969d00)                                                            = <void>
++++ exited (status 0) +++

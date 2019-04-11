@@ -1,0 +1,121 @@
+/************************************************************************************
+ * @file main.c
+ * @brief Contains main function
+ * @author Vikrant Waje
+ * @date April 7, 2019
+ *
+ ************************************************************************************/
+
+//***********************************************************************************
+
+//***********************************************************************************
+//                                  Include files
+//***********************************************************************************
+
+#include"main.h"
+
+//***********************************************************************************
+//                                  Global variables
+//***********************************************************************************
+
+xSemaphoreHandle g_pUARTSemaphore;// The mutex that protects concurrent access of UART from multiple tasks.
+
+
+//***********************************************************************************
+//                              Function implementation
+//***********************************************************************************
+
+
+int main(void)
+{
+
+    volatile uint32_t ui32Loop;
+
+    system_init();  //Initialises peripherals required for system operation
+
+    //
+    // Print demo introduction.
+    //
+    UARTprintf("\n\nWelcome to the EK-TM4C123GXL FreeRTOS Demo!\n");
+
+    //
+    // Create a mutex to guard the UART.
+    //
+    //g_pUARTSemaphore = xSemaphoreCreateMutex();
+
+
+
+
+
+        //
+        // Loop forever.
+        //
+        while(1)
+        {
+            //
+            // Turn on the LED.
+            //
+            led_on(GREEN_LED_PORT,GREEN_LED_PIN);
+            led_on(RED_LED_PORT,RED_LED_PIN);
+
+           // GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 0x01);
+
+            //
+            // Delay for a bit.
+            //
+            for(ui32Loop = 0; ui32Loop < 200000; ui32Loop++)
+            {
+            }
+
+            //
+            // Turn off the LED.
+            //
+            led_off(GREEN_LED_PORT, GREEN_LED_PIN);
+            led_off(RED_LED_PORT, RED_LED_PIN);
+
+
+            //
+            // Delay for a bit.
+            //
+            for(ui32Loop = 0; ui32Loop < 200000; ui32Loop++)
+            {
+            }
+        }
+
+
+    //
+    // Create the LED task.
+    //
+//    if(LEDTaskInit() != 0)
+//    {
+//
+//        while(1)
+//        {
+//        }
+//    }
+//
+//    //
+//    // Create the switch task.
+//    //
+//    if(SwitchTaskInit() != 0)
+//    {
+//
+//        while(1)
+//        {
+//        }
+//    }
+
+    //
+    // Start the scheduler.  This should not return.
+    //
+    vTaskStartScheduler();
+
+    //
+    // In case the scheduler returns for some reason, print an error and loop
+    // forever.
+    //
+
+    while(1)
+    {
+    }
+}

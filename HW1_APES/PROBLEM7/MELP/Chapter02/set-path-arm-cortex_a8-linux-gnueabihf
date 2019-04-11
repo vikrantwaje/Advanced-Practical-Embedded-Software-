@@ -1,0 +1,13 @@
+# Add a toolchain created using CrosstoolNG to your path
+# and export ARCH and CROSS_COMPILE variables ready to 
+# compile U-Boot, Linux, Busybox and anything else using
+# the Kconfig/Kbuild scripts
+
+# Chris Simmonds, chris@2net.co.uk
+
+PATH=${HOME}/x-tools/arm-cortex_a8-linux-gnueabihf/bin/:$PATH
+#default
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+export CROSS_COMPILE=arm-cortex_a8-linux-gnueabihf-
+export ARCH=arm

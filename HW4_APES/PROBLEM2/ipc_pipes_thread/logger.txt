@@ -1,0 +1,447 @@
+
+[2035573.778826] Main thread:Using PIPES for INTER PROCESS COMMUNICATION pid = 1881610048
+[2035573.902862] Entering thread1, pid =  1870972672
+[2035573.956989] Entering thread2, pid =  1862579968
+[2035573.987405]Thread1: Initialising communication 0  
+[2036574.332348]Thread2: Communication initialised 0 
+[2037574.730933]Thread1: Sending data 1  
+[2038575.618179]Thread2: Data Received 1 
+[2039576.409160]Thread1: Waiting for Acknowledgement 2  
+[2040577.028372]Thread2: Sending Acknowledgement 2 
+[2041577.147747]Thread1: Closing the connection 3  
+[2042577.317181]Thread2: Connection closed 3 
+[2043577.386047] Exiting thread1, pid =  1870972672
+[2043577.693363] Exiting thread2, pid =  1862579968
+[2043577.745954] EXiting main thread, pid =  1881610048
+
+
+[54422798.382801] Main thread:Using PIPES for INTER PROCESS COMMUNICATION pid = 3538556736
+
+[54422798.496433] Entering thread2, pid =  3519526656
+
+[54422798.496433] Entering thread1, pid =  3527919360
+
+[54422798.577922]Thread1: Initialising communication  String length: 35  , LED command sent by thread1:  0 
+
+[54423800.461352]Thread2: Communication initialised  String length: 34  , LED command for which acknowledgement was received from thread2:  0 
+
+[54424800.176807]Thread1: Opening gateway  String length: 24  , LED command sent by thread1:  1 
+
+[54425802.738703]Thread2: Gateway opened  String length: 23  , LED command for which acknowledgement was received from thread2:  1 
+
+[54426801.585180]Thread1: Checking system status  String length: 31  , LED command sent by thread1:  2 
+
+[54427806.964553]Thread2: Status positive  String length: 24  , LED command for which acknowledgement was received from thread2:  2 
+
+[54428802.950662]Thread1: Adding parity bits  String length: 27  , LED command sent by thread1:  3 
+
+[54429810.207052]Thread2: Parity bits added successfull  String length: 38  , LED command for which acknowledgement was received from thread2:  3 
+
+[54430804.367360]Thread1: Sending data  String length: 21  , LED command sent by thread1:  4 
+
+[54431812.688975]Thread2: Data sent  String length: 18  , LED command for which acknowledgement was received from thread2:  4 
+
+[54432805.714116]Thread1: Extracting data  String length: 24  , LED command sent by thread1:  5 
+
+[54433813.930268]Thread2: Data extracted  String length: 23  , LED command for which acknowledgement was received from thread2:  5 
+
+[54434806.135757]Thread1: Extracting parity  String length: 26  , LED command sent by thread1:  6 
+
+[54435817.749035]Thread2: Parity extracted  String length: 25  , LED command for which acknowledgement was received from thread2:  6 
+
+[54436807.504929]Thread1: Waiting for Acknowledgement  String length: 36  , LED command sent by thread1:  7 
+
+[54437821.629811]Thread2: Acknowledgement sent  String length: 29  , LED command for which acknowledgement was received from thread2:  7 
+
+[54438809.092204]Thread1: Closing the gateway  String length: 28  , LED command sent by thread1:  8 
+
+[54439824.805900]Thread2: Gateway closed  String length: 23  , LED command for which acknowledgement was received from thread2:  8 
+
+[54440810.318950]Thread1: Closing the connection  String length: 31  , LED command sent by thread1:  9 
+
+[54441830.199387]Thread2: Connection closed  String length: 26  , LED command for which acknowledgement was received from thread2:  9 
+
+[54442810.917119] Exiting thread2, pid =  3519526656
+
+[54442831.475870] Exiting thread1, pid =  3527919360
+
+[54442831.722262] EXiting main thread, pid =  3538556736
+
+
+[55542762.150129] Main thread:Using PIPES for INTER PROCESS COMMUNICATION pid = 3208226624
+
+[55542762.236161] Entering thread1, pid =  3197589248
+
+[55542762.275399] Entering thread2, pid =  3189196544
+
+[55542762.668522]Thread1: Initialising communication  String length: 35  , LED command sent by thread1:  0 
+
+[55543765.645006]Thread2: Communication initialised  String length: 34  , LED command for which acknowledgement was received from thread2:  0 
+
+[55544764.865899]Thread1: Opening gateway  String length: 24  , LED command sent by thread1:  1 
+
+[55545769.180242]Thread2: Gateway opened  String length: 23  , LED command for which acknowledgement was received from thread2:  1 
+
+[55546765.642235]Thread1: Checking system status  String length: 31  , LED command sent by thread1:  2 
+
+[55547770.918751]Thread2: Status positive  String length: 24  , LED command for which acknowledgement was received from thread2:  2 
+
+[55548766.483398]Thread1: Adding parity bits  String length: 27  , LED command sent by thread1:  3 
+
+[55549773.752265]Thread2: Parity bits added successfull  String length: 38  , LED command for which acknowledgement was received from thread2:  3 
+
+[55550767.307767]Thread1: Sending data  String length: 21  , LED command sent by thread1:  4 
+
+[55551774.507367]Thread2: Data sent  String length: 18  , LED command for which acknowledgement was received from thread2:  4 
+
+[55610400.999115] Main thread:Using PIPES for INTER PROCESS COMMUNICATION pid = 4124780352
+
+[55610401.105049] Entering thread2, pid =  4105750272
+
+[55610401.105049] Entering thread1, pid =  4114142976
+
+[55610401.171954]Thread1: Initialising communication  String length: 35  , LED command sent by thread1:  0 
+
+[55611402.915796]Thread2: Communication initialised  String length: 34  , LED command for which acknowledgement was received from thread2:  0 
+
+[55612403.264651]Thread1: Opening gateway  String length: 24  , LED command sent by thread1:  1 
+
+[55613405.666410]Thread2: Gateway opened  String length: 23  , LED command for which acknowledgement was received from thread2:  1 
+
+[55614404.133419]Thread1: Checking system status  String length: 31  , LED command sent by thread1:  2 
+
+[55615407.463038]Thread2: Status positive  String length: 24  , LED command for which acknowledgement was received from thread2:  2 
+
+[55616405.926691]Thread1: Adding parity bits  String length: 27  , LED command sent by thread1:  3 
+
+[55617409.230789]Thread2: Parity bits added successfull  String length: 38  , LED command for which acknowledgement was received from thread2:  3 
+
+[55618406.754566]Thread1: Sending data  String length: 21  , LED command sent by thread1:  4 
+
+[55619411.078100]Thread2: Data sent  String length: 18  , LED command for which acknowledgement was received from thread2:  4 
+
+[55704821.086315] Main thread:Using PIPES for INTER PROCESS COMMUNICATION pid = 3839420224
+
+[55704821.213264] Entering thread1, pid =  3828782848
+
+[55704821.260403] Entering thread2, pid =  3820390144
+
+[55704821.281507]Thread1: Initialising communication  String length: 35  , LED command sent by thread1:  0 
+
+[55705821.979660]Thread2: Communication initialised  String length: 34  , LED command for which acknowledgement was received from thread2:  0 
+
+[55706822.342304]Thread1: Opening gateway  String length: 24  , LED command sent by thread1:  1 
+
+[55707822.808718]Thread2: Gateway opened  String length: 23  , LED command for which acknowledgement was received from thread2:  1 
+
+[55708823.141119]Thread1: Checking system status  String length: 31  , LED command sent by thread1:  2 
+
+[55709823.650058]Thread2: Status positive  String length: 24  , LED command for which acknowledgement was received from thread2:  2 
+
+[55710824.043478]Thread1: Adding parity bits  String length: 27  , LED command sent by thread1:  3 
+
+[55711825.409814]Thread2: Parity bits added successfull  String length: 38  , LED command for which acknowledgement was received from thread2:  3 
+
+[55793432.048476] Main thread:Using PIPES for INTER PROCESS COMMUNICATION pid = 1298216768
+
+[55793432.170769] Entering thread1, pid =  1287579392
+
+[55793432.218830] Entering thread2, pid =  1279186688
+
+[55793432.242730]Thread1: Initialising communication  String length: 35  , LED command sent by thread1:  0 
+
+[55794432.486678]Thread2: Communication initialised  String length: 34  , LED command for which acknowledgement was received from thread2:  0 
+
+[55795432.842859]Thread1: Opening gateway  String length: 24  , LED command sent by thread1:  1 
+
+[55796433.168870]Thread2: Gateway opened  String length: 23  , LED command for which acknowledgement was received from thread2:  1 
+
+[55797434.500765]Thread1: Checking system status  String length: 31  , LED command sent by thread1:  2 
+
+[55798435.822190]Thread2: Status positive  String length: 24  , LED command for which acknowledgement was received from thread2:  2 
+
+[55799436.164606]Thread1: Adding parity bits  String length: 27  , LED command sent by thread1:  3 
+
+[55800436.508573]Thread2: Parity bits added successfull  String length: 38  , LED command for which acknowledgement was received from thread2:  3 
+
+[55856538.383043] Main thread:Using PIPES for INTER PROCESS COMMUNICATION pid = 2276243264
+
+[55856538.465130] Entering thread1, pid =  2265605888
+
+[55856538.535165] Entering thread2, pid =  2257213184
+
+[55856538.562764]Thread1: Initialising communication  String length: 35  , LED command sent by thread1:  0 
+
+[55857539.941139]Thread2: Communication initialised  String length: 34  , LED command for which acknowledgement was received from thread2:  0 
+
+[55858543.289506]Thread1: Opening gateway  String length: 24  , LED command sent by thread1:  1 
+
+[55859544.662348]Thread2: Gateway opened  String length: 23  , LED command for which acknowledgement was received from thread2:  1 
+
+[55860545.068351]Thread1: Checking system status  String length: 31  , LED command sent by thread1:  2 
+
+[55861545.442201]Thread2: Status positive  String length: 24  , LED command for which acknowledgement was received from thread2:  2 
+
+[55862545.857260]Thread1: Adding parity bits  String length: 27  , LED command sent by thread1:  3 
+
+[55863546.241677]Thread2: Parity bits added successfull  String length: 38  , LED command for which acknowledgement was received from thread2:  3 
+
+[55942279.372899] Main thread:Using PIPES for INTER PROCESS COMMUNICATION pid = 2758260544
+
+[55942279.469670] Entering thread2, pid =  2739230464
+
+[55942279.469670] Entering thread1, pid =  2747623168
+
+[55942279.541763]Thread1: Initialising communication  String length: 35  , LED command sent by thread1:  0 
+
+[55943280.721508]Thread2: Communication initialised  String length: 34  , LED command for which acknowledgement was received from thread2:  0 
+
+[55944280.233239]Thread1: Opening gateway  String length: 24  , LED command sent by thread1:  1 
+
+[55945281.658818]Thread2: Gateway opened  String length: 23  , LED command for which acknowledgement was received from thread2:  1 
+
+[55946283.008836]Thread1: Checking system status  String length: 31  , LED command sent by thread1:  2 
+
+[55947285.418365]Thread2: Status positive  String length: 24  , LED command for which acknowledgement was received from thread2:  2 
+
+[55948285.888365]Thread1: Adding parity bits  String length: 27  , LED command sent by thread1:  3 
+
+[55949288.218772]Thread2: Parity bits added successfull  String length: 38  , LED command for which acknowledgement was received from thread2:  3 
+
+[55950289.666835] EXiting main thread, pid =  2758260544
+
+[56113882.363439] Main thread:Using PIPES for INTER PROCESS COMMUNICATION pid = 1290897216
+
+[56113882.601943] Entering thread2, pid =  1271867136
+
+[56113882.643217] Entering thread1, pid =  1280259840
+
+[56113882.676446]Thread1: Initialising communication  String length: 35  , LED command sent by thread1:  0 
+
+[56114883.085897]Thread2: Communication initialised  String length: 34  , LED command for which acknowledgement was received from thread2:  0 
+
+[56115883.476591]Thread1: Opening gateway  String length: 24  , LED command sent by thread1:  1 
+
+[56116883.900503]Thread2: Gateway opened  String length: 23  , LED command for which acknowledgement was received from thread2:  1 
+
+[56117884.287045]Thread1: Checking system status  String length: 31  , LED command sent by thread1:  2 
+
+[56118885.641775]Thread2: Status positive  String length: 24  , LED command for which acknowledgement was received from thread2:  2 
+
+[56119886.128926]Thread1: Adding parity bits  String length: 27  , LED command sent by thread1:  3 
+
+[56120886.504372]Thread2: Parity bits added successfull  String length: 38  , LED command for which acknowledgement was received from thread2:  3 
+
+[56121886.891079] Exiting thread2 due to kill signal, pid =  1271867136
+
+[56121887.184561] Exiting thread1 due to kill signal, pid =  1280259840
+
+[56121887.220759] EXiting main thread, pid =  1290897216
+
+
+[56592302.400808] Main thread:Using PIPES for INTER PROCESS COMMUNICATION pid = 140191974020928
+
+[56592302.477115] Entering thread1, pid =  140191963383552
+
+[56592302.477115] Entering thread2, pid =  140191954990848
+
+[56592302.578900]Thread1: Initialising communication  String length: 35  , LED command sent by thread1:  0 
+
+[56593304.166714]Thread2: Communication initialised  String length: 34  , LED command for which acknowledgement was received from thread2:  0 
+
+[56594304.627107]Thread1: Opening gateway  String length: 24  , LED command sent by thread1:  1 
+
+[56595308.901775]Thread2: Gateway opened  String length: 23  , LED command for which acknowledgement was received from thread2:  1 
+
+[56596308.373889]Thread1: Checking system status  String length: 31  , LED command sent by thread1:  2 
+
+[56597310.725914]Thread2: Status positive  String length: 24  , LED command for which acknowledgement was received from thread2:  2 
+
+[56598310.189284]Thread1: Adding parity bits  String length: 27  , LED command sent by thread1:  3 
+
+[56599313.511795]Thread2: Parity bits added successfull  String length: 38  , LED command for which acknowledgement was received from thread2:  3 
+
+[56600311.966549]Thread1: Sending data  String length: 21  , LED command sent by thread1:  4 
+
+[56601319.194946]Thread2: Data sent  String length: 18  , LED command for which acknowledgement was received from thread2:  4 
+
+[56602313.742715] Exiting thread2 due to kill signal, pid =  140191954990848
+
+[56602319.608894] Exiting thread1 due to kill signal, pid =  140191963383552
+
+[56602319.667062] EXiting main thread, pid =  140191974020928
+
+
+[57924248.946812] Main thread:Using PIPES for INTER PROCESS COMMUNICATION pid = 140370534381376
+
+[57924249.061959] Entering thread2, pid =  140370515351296
+
+[57924249.061959] Entering thread1, pid =  140370523744000
+
+[57924249.186370]Thread1: Initialising communication  String length: 35  , LED command sent by thread1:  0 
+
+[57925250.570191]Thread2: Communication initialised  String length: 34  , LED command for which acknowledgement was received from thread2:  0 
+
+[57926251.242666]Thread1: Opening gateway  String length: 24  , LED command sent by thread1:  1 
+
+[57927253.271538]Thread2: Gateway opened  String length: 23  , LED command for which acknowledgement was received from thread2:  1 
+
+[57928253.601629]Thread1: Checking system status  String length: 31  , LED command sent by thread1:  2 
+
+[57929256.213624]Thread2: Status positive  String length: 24  , LED command for which acknowledgement was received from thread2:  2 
+
+[57930255.280773]Thread1: Adding parity bits  String length: 27  , LED command sent by thread1:  3 
+
+[57931256.392198]Thread2: Parity bits added successfull  String length: 38  , LED command for which acknowledgement was received from thread2:  3 
+
+[57932263.127765]Thread1: Sending data  String length: 21  , LED command sent by thread1:  4 
+
+[57933258.665619]Thread2: Data sent  String length: 18  , LED command for which acknowledgement was received from thread2:  4 
+
+[57934270.505174]Thread1: Extracting data  String length: 24  , LED command sent by thread1:  5 
+
+[57935259.826149]Thread2: Data extracted  String length: 23  , LED command for which acknowledgement was received from thread2:  5 
+
+[57936272.886575]Thread1: Extracting parity  String length: 26  , LED command sent by thread1:  6 
+
+[57937265.480835]Thread2: Parity extracted  String length: 25  , LED command for which acknowledgement was received from thread2:  6 
+
+[57938277.759234]Thread1: Waiting for Acknowledgement  String length: 36  , LED command sent by thread1:  7 
+
+[57939271.925445]Thread2: Acknowledgement sent  String length: 29  , LED command for which acknowledgement was received from thread2:  7 
+
+[57940281.464282]Thread1: Closing the gateway  String length: 28  , LED command sent by thread1:  8 
+
+[57941273.597619]Thread2: Gateway closed  String length: 23  , LED command for which acknowledgement was received from thread2:  8 
+
+[57942283.323519]Thread1: Closing the connection  String length: 31  , LED command sent by thread1:  9 
+
+[57943279.751455]Thread2: Connection closed  String length: 26  , LED command for which acknowledgement was received from thread2:  9 
+
+[57944279.864394] Exiting thread1, pid =  140370523744000
+
+[57944293.548023] Exiting thread2, pid =  140370515351296
+
+[57944293.617904] EXiting main thread, pid =  140370534381376
+
+
+[60597718.833945] Main thread:Using PIPES for INTER PROCESS COMMUNICATION pid = 140702958397248
+
+[60597718.962614] Entering thread1, pid =  140702947759872
+
+[60597718.988572] Entering thread2, pid =  140702939367168
+
+[60597719.039325]Thread1: Initialising communication  String length: 35  , LED command sent by thread1:  0 
+
+[60598721.404513]Thread2: Communication initialised  String length: 34  , LED command for which acknowledgement was received from thread2:  0 
+
+[60599721.535791] Exiting thread2 due to kill signal, pid =  140702939367168
+
+[60599721.535791] Exiting thread1 due to kill signal, pid =  140702947759872
+
+[60599721.993776] EXiting main thread, pid =  140702958397248
+
+
+[2112532.383682] Main thread:Using PIPES for INTER PROCESS COMMUNICATION pid = 139933590542144
+
+[2112532.491518] Entering thread1, pid =  139933579904768
+
+[2112532.537707] Entering thread2, pid =  139933571512064
+
+[2112532.561963]Thread1: Initialising communication  String length: 35  , LED command sent by thread1:  0 
+
+[2113533.367638]Thread2: Communication initialised  String length: 34  , LED command for which acknowledgement was received from thread2:  0 
+
+[2114534.797756]Thread1: Opening gateway  String length: 24  , LED command sent by thread1:  1 
+
+[2115535.245925]Thread2: Gateway opened  String length: 23  , LED command for which acknowledgement was received from thread2:  1 
+
+[2116535.853220]Thread1: Checking system status  String length: 31  , LED command sent by thread1:  2 
+
+[2117536.322061]Thread2: Status positive  String length: 24  , LED command for which acknowledgement was received from thread2:  2 
+
+[2118537.365393]Thread1: Adding parity bits  String length: 27  , LED command sent by thread1:  3 
+
+[2119538.095338]Thread2: Parity bits added successfull  String length: 38  , LED command for which acknowledgement was received from thread2:  3 
+
+[2120538.824130]Thread1: Sending data  String length: 21  , LED command sent by thread1:  4 
+
+[2121538.898782]Thread2: Data sent  String length: 18  , LED command for which acknowledgement was received from thread2:  4 
+
+[2122539.401427]Thread1: Extracting data  String length: 24  , LED command sent by thread1:  5 
+
+[2123539.915361]Thread2: Data extracted  String length: 23  , LED command for which acknowledgement was received from thread2:  5 
+
+[2124540.971374]Thread1: Extracting parity  String length: 26  , LED command sent by thread1:  6 
+
+[2125541.145077]Thread2: Parity extracted  String length: 25  , LED command for which acknowledgement was received from thread2:  6 
+
+[2126541.333561]Thread1: Waiting for Acknowledgement  String length: 36  , LED command sent by thread1:  7 
+
+[2127542.743520]Thread2: Acknowledgement sent  String length: 29  , LED command for which acknowledgement was received from thread2:  7 
+
+[2128543.219995]Thread1: Closing the gateway  String length: 28  , LED command sent by thread1:  8 
+
+[2129553.418080]Thread2: Gateway closed  String length: 23  , LED command for which acknowledgement was received from thread2:  8 
+
+[2130553.885270]Thread1: Closing the connection  String length: 31  , LED command sent by thread1:  9 
+
+[2131555.296129]Thread2: Connection closed  String length: 26  , LED command for which acknowledgement was received from thread2:  9 
+
+[2132555.752937] Exiting thread1, pid =  139933579904768
+
+[2132555.984516] Exiting thread2, pid =  139933571512064
+
+[2132556.089052] EXiting main thread, pid =  139933590542144
+
+[10226881.140310] Main thread:Using PIPES for INTER PROCESS COMMUNICATION pid = 140611394414400
+
+[10226881.382301] Entering thread2, pid =  140611375384320 Resource identifier:  0x556d1bb4b040
+
+[10226881.457469] Entering thread1, pid =  140611383777024 Resource identifier:  0x556d1bb4b118
+
+[10226881.511239]Thread1: Initialising communication  String length: 35  , LED command sent by thread1:  0 
+
+[10227883.341570]Thread2: Communication initialised  String length: 34  , LED command for which acknowledgement was received from thread2:  0 
+
+[10228884.523428]Thread1: Opening gateway  String length: 24  , LED command sent by thread1:  1 
+
+[10229887.510191]Thread2: Gateway opened  String length: 23  , LED command for which acknowledgement was received from thread2:  1 
+
+[10230888.601786]Thread1: Checking system status  String length: 31  , LED command sent by thread1:  2 
+
+[10231889.518965]Thread2: Status positive  String length: 24  , LED command for which acknowledgement was received from thread2:  2 
+
+[10232890.340988]Thread1: Adding parity bits  String length: 27  , LED command sent by thread1:  3 
+
+[10233890.732503]Thread2: Parity bits added successfull  String length: 38  , LED command for which acknowledgement was received from thread2:  3 
+
+[10234891.198449]Thread1: Sending data  String length: 21  , LED command sent by thread1:  4 
+
+[10235895.103003]Thread2: Data sent  String length: 18  , LED command for which acknowledgement was received from thread2:  4 
+
+[10236895.457727]Thread1: Extracting data  String length: 24  , LED command sent by thread1:  5 
+
+[10237897.654899]Thread2: Data extracted  String length: 23  , LED command for which acknowledgement was received from thread2:  5 
+
+[10238898.523068]Thread1: Extracting parity  String length: 26  , LED command sent by thread1:  6 
+
+[10239898.825767]Thread2: Parity extracted  String length: 25  , LED command for which acknowledgement was received from thread2:  6 
+
+[10240900.050101]Thread1: Waiting for Acknowledgement  String length: 36  , LED command sent by thread1:  7 
+
+[10241900.841399]Thread2: Acknowledgement sent  String length: 29  , LED command for which acknowledgement was received from thread2:  7 
+
+[10242902.902830]Thread1: Closing the gateway  String length: 28  , LED command sent by thread1:  8 
+
+[10243903.503065]Thread2: Gateway closed  String length: 23  , LED command for which acknowledgement was received from thread2:  8 
+
+[10244904.876275]Thread1: Closing the connection  String length: 31  , LED command sent by thread1:  9 
+
+[10245905.079245]Thread2: Connection closed  String length: 26  , LED command for which acknowledgement was received from thread2:  9 
+
+[10246906.058803] Exiting thread2, pid =  140611375384320
+
+[10246906.776859] Exiting thread1, pid =  140611383777024
+
+[10246906.856219] EXiting main thread, pid =  140611394414400

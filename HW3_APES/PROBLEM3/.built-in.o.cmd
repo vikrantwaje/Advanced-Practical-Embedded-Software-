@@ -1,0 +1,1 @@
+cmd_/home/viks/Advanced-Practical-Embedded-Software/HW3_APES/PROBLEM3/built-in.o :=  rm -f /home/viks/Advanced-Practical-Embedded-Software/HW3_APES/PROBLEM3/built-in.o; arm-linux-ar rcSTPD /home/viks/Advanced-Practical-Embedded-Software/HW3_APES/PROBLEM3/built-in.o

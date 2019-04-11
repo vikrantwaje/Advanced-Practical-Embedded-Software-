@@ -1,0 +1,36 @@
+#!/bin/bash
+#@Title: Creating a bash script that prints all information about kernel
+#@Author: Vikrant Waje
+#@Date: 1/24/2019
+#@Tools used: Ubuntu OS
+#             vim
+#@Leveraged code: No
+file="script"
+echo "***************************************************************">$file 
+echo -ne "User information: ">>$file  # Displays text  User information  
+id >>$file
+echo " ****************************************************************">>$file
+echo -ne "Operating System Type/Brand: ">>$file #Displays text Operating System Type/Brand
+uname -o >>$file
+echo "*****************************************************************">>$file
+echo -ne "OS Distribution: ">>$file #Displays text OS Distribution
+lsb_release -s -d>>$file
+echo "******************************************************************">>$file
+echo -ne "OS Version: ">>$file #Displays text OS Version
+lsb_release -s -r>>$file
+echo "*******************************************************************">>$file
+echo -ne "Kernel Version: ">>$file #Displays text Kernel Version
+uname -r>>$file
+echo "********************************************************************">>$file
+echo -ne "Kernel gcc version build: ">>$file #Displays text gcc version build
+cat /proc/version>>$file
+echo "*********************************************************************">>$file
+echo -ne "Kernel build time: ">>$file #Displays text kernel build time
+uname -v>>$file
+echo "**********************************************************************">>$file
+echo  "System Architecture Information: ">>$file #Displays text System Architecture Information
+lscpu>>$file
+echo "**********************************************************************">>$file
+echo  "Information on File System Memory: ">>$file #Displays text Information on File Stem Memory
+df -h>>$file
+echo "***********************************************************************">>$file

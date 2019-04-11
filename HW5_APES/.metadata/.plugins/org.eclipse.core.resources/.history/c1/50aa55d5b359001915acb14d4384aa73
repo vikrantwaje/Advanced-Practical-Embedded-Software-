@@ -1,0 +1,172 @@
+/************************************************************************************
+ * @file main.c
+ * @brief Contains main function
+ * @author Vikrant Waje
+ * @date April 7, 2019
+ *
+ ************************************************************************************/
+
+//***********************************************************************************
+
+//***********************************************************************************
+//                                  Include files
+//***********************************************************************************
+
+#include"main.h"
+
+//***********************************************************************************
+//                                  Global variables
+//***********************************************************************************
+
+xSemaphoreHandle g_pUARTSemaphore;// The mutex that protects concurrent access of UART from multiple tasks.
+#define PRIORITY_LED_TASK (2)
+
+//***********************************************************************************
+//                              Function implementation
+//***********************************************************************************
+uint32_t g_ui32LEDDelay = 500;
+
+
+static void LEDTask(void *pvParameters)
+{
+    portTickType ui32LastTime;
+
+    //
+    // Get the current tick count.
+    //
+    ui32LastTime = xTaskGetTickCount();
+
+    //
+    // Loop forever.
+    //
+    while(1)
+    {
+        //
+        // Turn on the user LED.
+        //
+        //ROM_GPIOPinWrite(GPIO_PORTQ_BASE, GPIO_PIN_7, GPIO_PIN_7);
+        led_on(D1_LED_PORT,D1_LED_PIN, D1_ON);
+        led_on(D2_LED_PORT,D2_LED_PIN, D2_ON);
+
+
+        //
+        // Wait for the required amount of time.
+        //
+        vTaskDelayUntil(&ui32LastTime, g_ui32LEDDelay / portTICK_RATE_MS);
+
+        //
+        // Turn off the user LED.
+        //
+
+        led_off(D1_LED_PORT,D1_LED_PIN, D1_ON);
+        led_off(D2_LED_PORT,D2_LED_PIN, D2_ON);
+
+        //
+        // Wait for the required amount of time.
+        //
+        vTaskDelayUntil(&ui32LastTime, g_ui32LEDDelay / portTICK_RATE_MS);
+    }
+}
+
+int main(void)
+{
+
+    volatile uint32_t ui32Loop;
+
+    system_init();  //Initialises peripherals required for system operation
+
+    //
+    // Print demo introduction.
+    //
+    UARTprintf("\n\nWelcome to the EK-TM4C123GXL FreeRTOS Demo!\n");
+
+    //
+    // Create a mutex to guard the UART.
+    //
+    //g_pUARTSemaphore = xSemaphoreCreateMutex();
+
+
+
+
+
+        //
+        // Loop forever.
+        //
+     /*   while(1)
+        {
+            //
+            // Turn on the LED.
+            //
+            led_on(D1_LED_PORT,D1_LED_PIN, D1_ON);
+            led_on(D2_LED_PORT,D2_LED_PIN, D2_ON);
+
+           //GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 0x01);
+
+            //
+            // Delay for a bit.
+            //
+            for(ui32Loop = 0; ui32Loop < 200000; ui32Loop++)
+            {
+            }
+
+            //
+            // Turn off the LED.
+            //
+            led_off(D1_LED_PORT, D1_LED_PIN, OFF);
+            led_off(D2_LED_PORT, D2_LED_PIN, OFF);
+
+
+            //
+            // Delay for a bit.
+            //
+            for(ui32Loop = 0; ui32Loop < 200000; ui32Loop++)
+            {
+            }
+        }
+*/
+
+    //
+    // Create the LED task.
+    //
+
+        //
+        // Create the LED task.
+        //
+        if(xTaskCreate(LEDTask, (const portCHAR *)"LED", 128, NULL, tskIDLE_PRIORITY + PRIORITY_LED_TASK, NULL) != pdTRUE)
+        {
+            return(1);
+        }
+
+//    if(LEDTaskInit() != 0)
+//    {
+//
+//        while(1)
+//        {
+//        }
+//    }
+//
+//    //
+//    // Create the switch task.
+//    //
+//    if(SwitchTaskInit() != 0)
+//    {
+//
+//        while(1)
+//        {
+//        }
+//    }
+
+    //
+    // Start the scheduler.  This should not return.
+    //
+    vTaskStartScheduler();
+
+    //
+    // In case the scheduler returns for some reason, print an error and loop
+    // forever.
+    //
+
+    while(1)
+    {
+    }
+}
